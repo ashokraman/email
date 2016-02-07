@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type="email">
+
+    <moqui.screen.SubscreensItem screenLocation="component://webroot/screen/webroot.xml"
+            subscreenName="emailS" menuTitle="Email Science" menuIndex="71" menuInclude="N"
+            subscreenLocation="component://EmailScience/screen/EmailScienceRoot.xml"/>
+
+	<moqui.screen.SubscreensItem screenLocation="component://webroot/screen/webroot/apps.xml"
+            subscreenName="emailSAdmin" subscreenLocation="component://EmailScience/screen/EmailScienceAdmin.xml"
+            menuTitle="Email Science Admin" menuIndex="72" menuInclude="Y"/>
+
+    <moqui.screen.SubscreensItem screenLocation="component://webroot/screen/webroot.xml"
+            subscreenName="emailSstatic" subscreenLocation="component://EmailScience/screen/smailsciencestatic.xml"
+            menuTitle="emailSstatic" menuInclude="N"/>
+    <!-- NOTE: make sure this css path matches where the hmstatic root screen is mounted -->
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT" sequenceNum="750" resourceTypeEnumId="STRT_STYLESHEET"
+            resourceValue="/emailsciencestatic/css/EmailScienceDefault.css"/>
+
+	<!-- entire EmailScience App -->
+    <moqui.security.ArtifactGroup artifactGroupId="EMAILSCIENCE" description="EmailScience App (via root screen)"/>
+    <moqui.security.ArtifactGroupMember artifactGroupId="EMAILSCIENCE" 
+	artifactName="component://EmailScience/screen/EmailScienceRoot.xml"
+            artifactTypeEnumId="AT_XML_SCREEN" inheritAuthz="Y"/>
+    <!-- EmailScience Admin screens -->
+    <moqui.security.ArtifactGroup artifactGroupId="EMAILSCIENCE_ADMIN" description="EmailScience Admin (via root screen)"/>
+    <moqui.security.ArtifactGroupMember artifactGroupId="EMAILSCIENCE_ADMIN" artifactName="component://EmailScience/screen/EmailScienceAdmin.xml" artifactTypeEnumId="AT_XML_SCREEN" inheritAuthz="Y"/>
+			
+    <!-- authz/permission for EMAILSCIENCE_ADMIN users -->
+    <moqui.security.UserGroup userGroupId="EMAILSCIENCE_ADMIN" description="EmailScience Administrators"/>
+    <!-- authz for EmailScience app user group (EMAILSCIENCE_USERS) -->
+    <moqui.security.UserGroup userGroupId="EMAILSCIENCE_USERS" description="EmailScience Users"/>
+
+    <moqui.security.ArtifactAuthz artifactAuthzId="EMAILSCIENCE_USERS_AZ" userGroupId="EMAILSCIENCE_USERS" artifactGroupId="EMAILSCIENCE"
+            authzTypeEnumId="AUTHZT_ALLOW" authzActionEnumId="AUTHZA_ALL"/>
+    <moqui.security.ArtifactAuthz artifactAuthzId="EMAILSCIENCE_ADMIN_AZ" userGroupId="EMAILSCIENCE_ADMIN" artifactGroupId="EMAILSCIENCE_ADMIN"
+            authzTypeEnumId="AUTHZT_ALLOW" authzActionEnumId="AUTHZA_ALL"/>
+    <moqui.security.ArtifactAuthz artifactAuthzId="EMAILSCIENCE_ADM_ADMIN_AZ" userGroupId="ADMIN" artifactGroupId="EMAILSCIENCE_ADMIN"
+            authzTypeEnumId="AUTHZT_ALLOW" authzActionEnumId="AUTHZA_ALL"/>
+
+	<moqui.screen.SubscreensItem screenLocation="component://webroot/screen/webroot.xml"
+				subscreenName="emailsciencestatic" userGroupId="ALL_USERS" subscreenLocation="component://EmailScience/screen/emailsciencestatic.xml"
+				menuTitle="emailsciencestatic" menuInclude="N"/>
+
+	<mantle.party.Party partyId="GASL" partyTypeEnumId="PtyOrganization"/>
+	<mantle.party.Organization partyId="GASL" organizationName="Gasl"/>
+	<mantle.party.PartyRole partyId="GASL" roleTypeId="OrgInternal"/>
+
+	<mantle.party.Party partyId="GASL_OWNER" partyTypeEnumId="PtyPerson"/>
+	<mantle.party.Person partyId="GASL_OWNER" firstName="Tejasvita" middleName="" lastName="S"/>
+
+	<mantle.party.Party partyId="GASL_ADMIN" partyTypeEnumId="PtyPerson"/>
+	<mantle.party.Person partyId="GASL_ADMIN" firstName="Administrator" middleName="" lastName=", Mr"/>
+	<mantle.party.PartyRole partyId="GASL_ADMIN" roleTypeId="Administrator"/>
+
+	<moqui.security.UserAccount userId="GASL_ADMIN" username="admin" userFullName="Gasl Admin"
+			currentPassword="60386be9213562944c01d2a44b312e24ee0b5b1e" passwordHashType="SHA"
+			passwordHint="company, gasl-123, lowercase" currencyUomId="INR" locale="en_IND" timeZone="Asia/Kolkata" emailAddress="tejasvita.saran@galaxyadvisors.com" partyId="GASL_ADMIN"/>
+
+	<moqui.security.UserGroupMember userGroupId="ADMIN" userId="GASL_ADMIN" fromDate="1265184000000"/>
+
+</entity-facade-xml>

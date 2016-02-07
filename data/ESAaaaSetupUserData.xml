@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This software is in the public domain under CC0 1.0 Universal.
+
+To the extent possible under law, the author(s) have dedicated all
+copyright and related and neighboring rights to this software to the
+public domain worldwide. This software is distributed without any
+warranty.
+
+You should have received a copy of the CC0 Public Domain Dedication
+along with this software (see the LICENSE.md file). If not, see
+<http://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<entity-facade-xml type="email">
+    <!-- NOTE 1265184000000 = 2010-02-03 00:00:00 US/Pacific -->
+
+    <moqui.security.UserAccount userId="ashok_gasl" username="ashok@galaxyadvisors.com" userFullName="Ashok (GASL)"
+            currentPassword="60386be9213562944c01d2a44b312e24ee0b5b1e" passwordHashType="SHA"
+            passwordHint="gasl-123" currencyUomId="INR" locale="en_IND" timeZone="IST"
+            emailAddress="ashok@galaxyadvisors.com"/>
+    <moqui.security.UserPermission userPermissionId="GaslPerm" description="GASL Permission"/>
+    <moqui.security.UserGroupPermission userGroupId="ADMIN" userPermissionId="GaslPerm"
+            fromDate="1265184000000" thruDate=""/>
+    <moqui.security.UserGroupMember userGroupId="EMAILSCIENCE_USERS" userId="ashok_gasl" fromDate="1265184000000"/>
+    <moqui.security.UserGroupMember userGroupId="EMAILSCIENCE_ADMIN" userId="ashok_gasl" fromDate="1265184000000"/>
+
+	<mantle.party.Party partyId="user1_gasl" partyTypeEnumId="PtyPerson"/>
+	<mantle.party.Person partyId="user1_gasl" firstName="User1" middleName="" lastName="GASL"/>
+    <moqui.security.UserAccount userId="user1_gasl" username="user1@galaxyadvisors.com" userFullName="User1 GASL"
+            currentPassword="60386be9213562944c01d2a44b312e24ee0b5b1e" passwordHashType="SHA"
+            passwordHint="gasl-123" currencyUomId="INR" locale="en_IND" timeZone="IST"
+            emailAddress="user1@galaxyadvisors.com"/>
+    <moqui.security.UserGroupMember userGroupId="EMAILSCIENCE_USERS" userId="user1_gasl" fromDate="1265184000000"/>
+	
+	</entity-facade-xml>

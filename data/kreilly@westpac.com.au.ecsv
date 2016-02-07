@@ -1,0 +1,183 @@
+EmailScience.emaildata.EmailData,email
+sender,eventTypeEnumId,actualTime,recipient,subject,createdByUserId,instanceId
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-22T23:39:43.562Z,kreilly@westpac.com.au,RE: BT Financial Offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-22T23:39:43.936Z,kreilly@westpac.com.au,RE: BT Financial Offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-22T23:39:44.841Z,kreilly@westpac.com.au,RE: BT Financial Offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-23T00:43:08.068Z,kreilly@westpac.com.au,FW: For your approval: Cost and agenda for next week,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T00:43:08.114Z,kreilly@westpac.com.au,FW: For your approval: Cost and agenda for next week,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T00:43:08.910Z,kreilly@westpac.com.au,FW: For your approval: Cost and agenda for next week,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-24T04:52:47.881Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-24T04:52:48.786Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T02:51:28.792Z,kreilly@westpac.com.au,RE: Workshop Outline,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T02:51:29.650Z,kreilly@westpac.com.au,RE: Workshop Outline,user1_gasl,100
+Karen.Gilman@BTFinancialgroup.com,RECEIVE,2014-04-28T04:05:23.342Z,kreilly@westpac.com.au,Jane Watts/Kristin Reilly re Summit Program for Justan Kitchener (requested by Kristin),user1_gasl,100
+Karen.Gilman@BTFinancialgroup.com,TRANSFER,2014-04-28T04:05:23.389Z,kreilly@westpac.com.au,Jane Watts/Kristin Reilly re Summit Program for Justan Kitchener (requested by Kristin),user1_gasl,100
+Karen.Gilman@BTFinancialgroup.com,SEND,2014-04-28T04:05:24.200Z,kreilly@westpac.com.au,Jane Watts/Kristin Reilly re Summit Program for Justan Kitchener (requested by Kristin),user1_gasl,100
+Allison.Dale@btfinancialgroup.com,RECEIVE,2014-05-01T06:15:09.132Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program Dinner  (26 May 06:00 PM ZE10 in CBD - TBC ),user1_gasl,100
+Allison.Dale@btfinancialgroup.com,TRANSFER,2014-05-01T06:15:09.178Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program Dinner  (26 May 06:00 PM ZE10 in CBD - TBC ),user1_gasl,100
+Allison.Dale@btfinancialgroup.com,SEND,2014-05-01T06:15:10.068Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program Dinner  (26 May 06:00 PM ZE10 in CBD - TBC ),user1_gasl,100
+Gabrielle.Bryant@btfinancialgroup.com,TRANSFER,2014-05-01T07:55:16.418Z,kreilly@westpac.com.au,RE: AGSM/Wharton May Leadership Program Opportunities,user1_gasl,100
+Gabrielle.Bryant@btfinancialgroup.com,SEND,2014-05-01T07:55:17.385Z,kreilly@westpac.com.au,RE: AGSM/Wharton May Leadership Program Opportunities,user1_gasl,100
+Fran.Samalionis@BTFinancialgroup.com,TRANSFER,2014-05-05T03:30:09.751Z,kreilly@westpac.com.au,CCD Coaches for Aspire programs,user1_gasl,100
+Fran.Samalionis@BTFinancialgroup.com,SEND,2014-05-05T03:30:11.030Z,kreilly@westpac.com.au,CCD Coaches for Aspire programs,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-05-05T04:46:41.798Z,kreilly@westpac.com.au,BTFG projects and sponsors,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-05-05T04:46:43.031Z,kreilly@westpac.com.au,BTFG projects and sponsors,user1_gasl,100
+Fran.Samalionis@BTFinancialgroup.com,TRANSFER,2014-05-07T10:03:32.276Z,kreilly@westpac.com.au,Order of Aspire Workshop 3 and CCD coaching,user1_gasl,100
+Fran.Samalionis@BTFinancialgroup.com,SEND,2014-05-07T10:03:33.227Z,kreilly@westpac.com.au,Order of Aspire Workshop 3 and CCD coaching,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,RECEIVE,2014-05-12T02:51:59.228Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,TRANSFER,2014-05-12T02:51:59.977Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,SEND,2014-05-12T02:52:01.802Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Robert.Southerton@btfinancialgroup.com,RECEIVE,2014-05-12T07:49:30.027Z,kreilly@westpac.com.au,Re: Maximus agreement,user1_gasl,100
+Robert.Southerton@btfinancialgroup.com,TRANSFER,2014-05-12T07:49:30.261Z,kreilly@westpac.com.au,Re: Maximus agreement,user1_gasl,100
+Robert.Southerton@btfinancialgroup.com,SEND,2014-05-12T07:49:31.119Z,kreilly@westpac.com.au,Re: Maximus agreement,user1_gasl,100
+mchesworth@westpac.com.au,RECEIVE,2014-05-15T03:47:50.141Z,kreilly@westpac.com.au,RE: Summit Executive Mentor,user1_gasl,100
+mchesworth@westpac.com.au,TRANSFER,2014-05-15T03:47:50.188Z,kreilly@westpac.com.au,RE: Summit Executive Mentor,user1_gasl,100
+mchesworth@westpac.com.au,SEND,2014-05-15T03:47:50.952Z,kreilly@westpac.com.au,RE: Summit Executive Mentor,user1_gasl,100
+Jo.Kennedy@BTFinancialgroup.com,RECEIVE,2014-05-15T23:32:37.666Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+Jo.Kennedy@BTFinancialgroup.com,TRANSFER,2014-05-15T23:32:37.713Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+Jo.Kennedy@BTFinancialgroup.com,SEND,2014-05-15T23:32:38.571Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,RECEIVE,2014-05-15T23:44:00.088Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,TRANSFER,2014-05-15T23:44:00.166Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,SEND,2014-05-15T23:44:01.102Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+Leisa.Wass@btfinancialgroup.com,TRANSFER,2014-05-19T03:14:11.848Z,kreilly@westpac.com.au,RE: 180 Feedback,user1_gasl,100
+Leisa.Wass@btfinancialgroup.com,SEND,2014-05-19T03:14:12.628Z,kreilly@westpac.com.au,RE: 180 Feedback,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-23T00:21:59.961Z,kreilly@westpac.com.au,One Young World ,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T00:22:00.195Z,kreilly@westpac.com.au,One Young World ,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T00:22:00.944Z,kreilly@westpac.com.au,One Young World ,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-23T02:26:10.305Z,kreilly@westpac.com.au,RE: One Young World,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T02:26:10.320Z,kreilly@westpac.com.au,RE: One Young World,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T02:26:11.178Z,kreilly@westpac.com.au,RE: One Young World,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-22T07:14:24.082Z,kreilly@westpac.com.au,RE: Workshop Outline,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-22T07:14:24.128Z,kreilly@westpac.com.au,RE: Workshop Outline,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-22T07:14:24.940Z,kreilly@westpac.com.au,RE: Workshop Outline,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-23T05:11:44.412Z,kreilly@westpac.com.au,Tomorrow's call with Jamie and Brian,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T05:11:44.459Z,kreilly@westpac.com.au,Tomorrow's call with Jamie and Brian,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T05:11:58.025Z,kreilly@westpac.com.au,Tomorrow's call with Jamie and Brian,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-24T00:38:34.887Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-24T00:38:35.730Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Mark.Spiers@BTFinancialgroup.com,TRANSFER,2014-04-24T07:54:53.723Z,kreilly@westpac.com.au,Re: Summit Program: Meeting for Mike Chesworth,user1_gasl,100
+Mark.Spiers@BTFinancialgroup.com,SEND,2014-04-24T07:54:54.535Z,kreilly@westpac.com.au,Re: Summit Program: Meeting for Mike Chesworth,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-24T05:41:51.990Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-24T05:41:52.037Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-24T05:41:52.848Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-28T06:43:57.488Z,kreilly@westpac.com.au,Questions from Project sponsors,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-28T06:43:58.159Z,kreilly@westpac.com.au,Questions from Project sponsors,user1_gasl,100
+Klaudia.Starkey@BTFinancialgroup.com,RECEIVE,2014-05-01T01:57:08.301Z,kreilly@westpac.com.au,RE: AICD,user1_gasl,100
+Klaudia.Starkey@BTFinancialgroup.com,TRANSFER,2014-05-01T01:57:08.395Z,kreilly@westpac.com.au,RE: AICD,user1_gasl,100
+Klaudia.Starkey@BTFinancialgroup.com,SEND,2014-05-01T01:57:09.128Z,kreilly@westpac.com.au,RE: AICD,user1_gasl,100
+Toni.Flynn@BTFinancialgroup.com,RECEIVE,2014-05-01T06:35:32.512Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program Dinner  (26 May 06:00 PM ZE10 in CBD - TBC ),user1_gasl,100
+Toni.Flynn@BTFinancialgroup.com,TRANSFER,2014-05-01T06:35:32.558Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program Dinner  (26 May 06:00 PM ZE10 in CBD - TBC ),user1_gasl,100
+Toni.Flynn@BTFinancialgroup.com,SEND,2014-05-01T06:35:54.367Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program Dinner  (26 May 06:00 PM ZE10 in CBD - TBC ),user1_gasl,100
+Fran.Samalionis@BTFinancialgroup.com,TRANSFER,2014-05-05T03:32:42.763Z,kreilly@westpac.com.au,Re: CCD Coaches for Aspire programs,user1_gasl,100
+Fran.Samalionis@BTFinancialgroup.com,SEND,2014-05-05T03:32:43.543Z,kreilly@westpac.com.au,Re: CCD Coaches for Aspire programs,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,RECEIVE,2014-05-07T03:03:05.785Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,TRANSFER,2014-05-07T03:03:06.003Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,SEND,2014-05-07T03:04:20.304Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Sharon.Maunder@BTFinancialgroup.com,RECEIVE,2014-05-07T04:55:53.434Z,kreilly@westpac.com.au,RE: Email template for raters,user1_gasl,100
+Sharon.Maunder@BTFinancialgroup.com,TRANSFER,2014-05-07T04:55:53.480Z,kreilly@westpac.com.au,RE: Email template for raters,user1_gasl,100
+Sharon.Maunder@BTFinancialgroup.com,SEND,2014-05-07T04:55:56.117Z,kreilly@westpac.com.au,RE: Email template for raters,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,RECEIVE,2014-05-07T23:53:33.216Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,TRANSFER,2014-05-07T23:53:44.604Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,SEND,2014-05-07T23:53:48.504Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-05-09T05:10:33.844Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-05-09T05:10:33.875Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-05-09T05:10:34.749Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,RECEIVE,2014-05-12T03:49:19.652Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,TRANSFER,2014-05-12T03:49:19.715Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,SEND,2014-05-12T03:49:23.537Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Leisa.Wass@btfinancialgroup.com,TRANSFER,2014-05-13T02:08:53.768Z,kreilly@westpac.com.au,RE: 180 Westpac Leadership Survey - Scalable Advice Leadership Team,user1_gasl,100
+Leisa.Wass@btfinancialgroup.com,SEND,2014-05-13T02:08:54.579Z,kreilly@westpac.com.au,RE: 180 Westpac Leadership Survey - Scalable Advice Leadership Team,user1_gasl,100
+Richard.Holmes@BTFinancialgroup.com,TRANSFER,2014-05-14T06:32:52.349Z,kreilly@westpac.com.au,RE: Executive Coaching for SUMMIT,user1_gasl,100
+Richard.Holmes@BTFinancialgroup.com,SEND,2014-05-14T06:32:53.254Z,kreilly@westpac.com.au,RE: Executive Coaching for SUMMIT,user1_gasl,100
+Madeleine.Skinner@BTFinancialgroup.com,RECEIVE,2014-05-14T12:24:58.033Z,kreilly@westpac.com.au,RE: HS Leadership Impact,user1_gasl,100
+Madeleine.Skinner@BTFinancialgroup.com,TRANSFER,2014-05-14T12:24:58.251Z,kreilly@westpac.com.au,RE: HS Leadership Impact,user1_gasl,100
+Madeleine.Skinner@BTFinancialgroup.com,SEND,2014-05-14T12:24:59.187Z,kreilly@westpac.com.au,RE: HS Leadership Impact,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,RECEIVE,2014-05-15T05:14:18.636Z,kreilly@westpac.com.au,FW: For action: additional names for Group programs,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,TRANSFER,2014-05-15T05:14:19.073Z,kreilly@westpac.com.au,FW: For action: additional names for Group programs,user1_gasl,100
+Vandana.Reddy@btfinancialgroup.com,SEND,2014-05-15T05:14:19.806Z,kreilly@westpac.com.au,FW: For action: additional names for Group programs,user1_gasl,100
+Jo.Kennedy@BTFinancialgroup.com,RECEIVE,2014-05-15T23:32:19.304Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+Jo.Kennedy@BTFinancialgroup.com,TRANSFER,2014-05-15T23:32:19.351Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+Jo.Kennedy@BTFinancialgroup.com,SEND,2014-05-15T23:32:20.177Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+Toni.Flynn@BTFinancialgroup.com,RECEIVE,2014-05-15T23:33:24.557Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+Toni.Flynn@BTFinancialgroup.com,TRANSFER,2014-05-15T23:33:24.604Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+Toni.Flynn@BTFinancialgroup.com,SEND,2014-05-15T23:33:25.353Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+sflatman@westpac.com.au,RECEIVE,2014-05-16T00:32:28.996Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+sflatman@westpac.com.au,SEND,2014-05-16T00:32:39.074Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+ehenderson@westpac.com.au,RECEIVE,2014-05-16T01:07:43.848Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+ehenderson@westpac.com.au,TRANSFER,2014-05-16T01:07:43.957Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+ehenderson@westpac.com.au,SEND,2014-05-16T01:07:44.737Z,kreilly@westpac.com.au,Accepted: Information Update - Location has changed: Summit Program Dinner,user1_gasl,100
+Elizabeth.May@BTFinancialgroup.com,RECEIVE,2014-04-23T03:06:48.514Z,kreilly@westpac.com.au,Accepted: FW: Invitation: Discussion with Jamie/Brian (24 Apr 09:00 AM ZE10 in L16-Room 16.17-RA-max06/275 Kent St-SYD@WBG),user1_gasl,100
+Elizabeth.May@BTFinancialgroup.com,TRANSFER,2014-04-23T03:06:48.560Z,kreilly@westpac.com.au,Accepted: FW: Invitation: Discussion with Jamie/Brian (24 Apr 09:00 AM ZE10 in L16-Room 16.17-RA-max06/275 Kent St-SYD@WBG),user1_gasl,100
+Elizabeth.May@BTFinancialgroup.com,SEND,2014-04-23T03:06:49.372Z,kreilly@westpac.com.au,Accepted: FW: Invitation: Discussion with Jamie/Brian (24 Apr 09:00 AM ZE10 in L16-Room 16.17-RA-max06/275 Kent St-SYD@WBG),user1_gasl,100
+Sophie.Firminger@btfinancialgroup.com,TRANSFER,2014-04-23T03:47:02.957Z,kreilly@westpac.com.au,RE: Wharton Study Tour ,user1_gasl,100
+Sophie.Firminger@btfinancialgroup.com,SEND,2014-04-23T03:47:03.799Z,kreilly@westpac.com.au,RE: Wharton Study Tour ,user1_gasl,100
+alihovey@westpac.com.au,RECEIVE,2014-04-29T06:36:03.284Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program: Review Meeting for Michelle Trevethan and Stuart Hall (14 May 09:30 AM ZE10 in 31.05),user1_gasl,100
+rslade@westpac.com.au,TRANSFER,2014-04-29T06:36:03.346Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program: Review Meeting for Michelle Trevethan and Stuart Hall (14 May 09:30 AM ZE10 in 31.05),user1_gasl,100
+rslade@westpac.com.au,SEND,2014-04-29T06:36:04.204Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program: Review Meeting for Michelle Trevethan and Stuart Hall (14 May 09:30 AM ZE10 in 31.05),user1_gasl,100
+Dianne.Chester@BTFinancialgroup.com,RECEIVE,2014-04-29T06:05:17.925Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program: Review Meeting for Vicki Doyle (13 May 01:30 PM ZE10 in L11-Room 11.02-max04/275 Kent St-SYD@WBG),user1_gasl,100
+Dianne.Chester@BTFinancialgroup.com,TRANSFER,2014-04-29T06:05:24.758Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program: Review Meeting for Vicki Doyle (13 May 01:30 PM ZE10 in L11-Room 11.02-max04/275 Kent St-SYD@WBG),user1_gasl,100
+Dianne.Chester@BTFinancialgroup.com,SEND,2014-04-29T06:05:25.647Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program: Review Meeting for Vicki Doyle (13 May 01:30 PM ZE10 in L11-Room 11.02-max04/275 Kent St-SYD@WBG),user1_gasl,100
+Angela.Serhan@BTFinancialgroup.com,TRANSFER,2014-05-01T09:12:09.033Z,kreilly@westpac.com.au,RE: AGSM/Wharton May Leadership Program Opportunities,user1_gasl,100
+Angela.Serhan@BTFinancialgroup.com,SEND,2014-05-01T09:12:10.063Z,kreilly@westpac.com.au,RE: AGSM/Wharton May Leadership Program Opportunities,user1_gasl,100
+Sophie.Firminger@btfinancialgroup.com,TRANSFER,2014-05-12T05:26:55.678Z,kreilly@westpac.com.au,RE: Wharton Study Tour,user1_gasl,100
+Sophie.Firminger@btfinancialgroup.com,SEND,2014-05-12T05:26:56.395Z,kreilly@westpac.com.au,RE: Wharton Study Tour,user1_gasl,100
+Angela.Serhan@BTFinancialgroup.com,RECEIVE,2014-05-13T07:24:24.620Z,kreilly@westpac.com.au,RE: 360 Request for GM1 - Chris Lumby,user1_gasl,100
+Angela.Serhan@BTFinancialgroup.com,TRANSFER,2014-05-13T07:24:24.729Z,kreilly@westpac.com.au,RE: 360 Request for GM1 - Chris Lumby,user1_gasl,100
+Angela.Serhan@BTFinancialgroup.com,SEND,2014-05-13T07:24:25.540Z,kreilly@westpac.com.au,RE: 360 Request for GM1 - Chris Lumby,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,RECEIVE,2014-05-14T09:32:24.433Z,kreilly@westpac.com.au,Re: Business project budget,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,TRANSFER,2014-05-14T09:32:24.527Z,kreilly@westpac.com.au,Re: Business project budget,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,SEND,2014-05-14T09:32:25.385Z,kreilly@westpac.com.au,Re: Business project budget,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,RECEIVE,2014-05-16T06:38:58.190Z,kreilly@westpac.com.au,RE: Business project budget ,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,TRANSFER,2014-05-16T06:38:58.236Z,kreilly@westpac.com.au,RE: Business project budget ,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,SEND,2014-05-16T06:38:59.048Z,kreilly@westpac.com.au,RE: Business project budget ,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,TRANSFER,2014-04-22T01:14:27.924Z,kreilly@westpac.com.au,RE: Summit Program 360,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,SEND,2014-04-22T01:14:28.751Z,kreilly@westpac.com.au,RE: Summit Program 360,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T00:04:15.948Z,kreilly@westpac.com.au,RE: Workshop 3 project groups and update,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T00:04:16.229Z,kreilly@westpac.com.au,RE: Workshop 3 project groups and update,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-22T03:43:53.957Z,kreilly@westpac.com.au,RE: Jamie's details,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-22T03:43:54.019Z,kreilly@westpac.com.au,RE: Jamie's details,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-22T03:43:54.893Z,kreilly@westpac.com.au,RE: Jamie's details,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-23T00:12:40.939Z,kreilly@westpac.com.au,RE: BT Financial Offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T00:12:40.970Z,kreilly@westpac.com.au,RE: BT Financial Offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T00:12:41.765Z,kreilly@westpac.com.au,RE: BT Financial Offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T00:17:15.719Z,kreilly@westpac.com.au,RE: Workshop 3 project groups and update,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T00:17:16.889Z,kreilly@westpac.com.au,RE: Workshop 3 project groups and update,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-23T02:52:16.467Z,kreilly@westpac.com.au,Meeting Forward Notification: Invitation: Discussion with Jamie/Brian (24 Apr 09:00 AM ZE10 in L16-Room 16.17-RA-max06/275 Kent St-SYD@WBG),user1_gasl,100
+Fran.Samalionis@BTFinancialgroup.com,TRANSFER,2014-04-22T07:09:47.167Z,kreilly@westpac.com.au,RE: Aspire project coaching/sponsor templates (attached),user1_gasl,100
+Fran.Samalionis@BTFinancialgroup.com,SEND,2014-04-22T07:09:47.885Z,kreilly@westpac.com.au,RE: Aspire project coaching/sponsor templates (attached),user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-22T23:38:33.547Z,kreilly@westpac.com.au,Accepted: Invitation: Discussion with Jamie/Brian (24 Apr 09:00 AM ZE10 in L16-Room 16.17-RA-max06/275 Kent St-SYD@WBG),user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-22T23:38:33.579Z,kreilly@westpac.com.au,Accepted: Invitation: Discussion with Jamie/Brian (24 Apr 09:00 AM ZE10 in L16-Room 16.17-RA-max06/275 Kent St-SYD@WBG),user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-22T23:38:34.405Z,kreilly@westpac.com.au,Accepted: Invitation: Discussion with Jamie/Brian (24 Apr 09:00 AM ZE10 in L16-Room 16.17-RA-max06/275 Kent St-SYD@WBG),user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-23T06:07:29.350Z,kreilly@westpac.com.au,RE: Tomorrow's Call - Teleconference Details ,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T06:07:29.366Z,kreilly@westpac.com.au,RE: Tomorrow's Call - Teleconference Details ,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T06:07:30.239Z,kreilly@westpac.com.au,RE: Tomorrow's Call - Teleconference Details ,user1_gasl,100
+Fabian.Ross@btfinancialgroup.com,TRANSFER,2014-04-24T00:11:01.209Z,kreilly@westpac.com.au,RE: Wharton Study Tour,user1_gasl,100
+Fabian.Ross@btfinancialgroup.com,SEND,2014-04-24T00:11:02.052Z,kreilly@westpac.com.au,RE: Wharton Study Tour,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-23T07:45:09.387Z,kreilly@westpac.com.au,Insight in preparation for Panorama offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-23T07:45:10.323Z,kreilly@westpac.com.au,Insight in preparation for Panorama offsite,user1_gasl,100
+Steven.Browning@asgard.com.au,TRANSFER,2014-04-23T05:17:07.626Z,kreilly@westpac.com.au,RE: Wharton Study Tour,user1_gasl,100
+Steven.Browning@asgard.com.au,SEND,2014-04-23T05:17:08.500Z,kreilly@westpac.com.au,RE: Wharton Study Tour,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-04-24T01:34:33.116Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-04-24T01:34:33.303Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-04-24T01:34:34.145Z,kreilly@westpac.com.au,RE: Preparation for Panorama offsite,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,RECEIVE,2014-05-01T05:01:55.234Z,kreilly@westpac.com.au,Accepted: Invitation: Placeholder: Summit Inspirational Leadership Workshop  (26 May 08:30 AM ZE10 in TBC),user1_gasl,100
+Allison.Dale@btfinancialgroup.com,TRANSFER,2014-05-01T05:01:55.312Z,kreilly@westpac.com.au,Accepted: Invitation: Placeholder: Summit Inspirational Leadership Workshop  (26 May 08:30 AM ZE10 in TBC),user1_gasl,100
+Allison.Dale@btfinancialgroup.com,SEND,2014-05-01T05:01:56.154Z,kreilly@westpac.com.au,Accepted: Invitation: Placeholder: Summit Inspirational Leadership Workshop  (26 May 08:30 AM ZE10 in TBC),user1_gasl,100
+ehenderson@westpac.com.au,RECEIVE,2014-05-01T06:12:05.529Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program Dinner  (26 May 06:00 PM ZE10 in CBD - TBC ),user1_gasl,100
+ehenderson@westpac.com.au,TRANSFER,2014-05-01T06:12:05.560Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program Dinner  (26 May 06:00 PM ZE10 in CBD - TBC ),user1_gasl,100
+ehenderson@westpac.com.au,SEND,2014-05-01T06:12:06.340Z,kreilly@westpac.com.au,Accepted: Invitation: Summit Program Dinner  (26 May 06:00 PM ZE10 in CBD - TBC ),user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,RECEIVE,2014-05-14T22:52:35.993Z,kreilly@westpac.com.au,RE: Fwd: Business project budget,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,TRANSFER,2014-05-14T22:52:36.586Z,kreilly@westpac.com.au,RE: Fwd: Business project budget,user1_gasl,100
+Stephanie.Maynes@BTFinancialgroup.com,SEND,2014-05-14T22:52:37.460Z,kreilly@westpac.com.au,RE: Fwd: Business project budget,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,RECEIVE,2014-05-15T07:34:05.764Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,TRANSFER,2014-05-15T07:34:05.795Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Joanna.Lockard@btfinancialgroup.com,SEND,2014-05-15T07:34:06.575Z,kreilly@westpac.com.au,RE: AGSM/Wharton Growing Talent People Leader Program,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,RECEIVE,2014-05-15T23:21:40.560Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,TRANSFER,2014-05-15T23:21:40.607Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,SEND,2014-05-15T23:21:41.512Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,RECEIVE,2014-05-15T23:21:47.658Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,TRANSFER,2014-05-15T23:21:47.986Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+Allison.Dale@btfinancialgroup.com,SEND,2014-05-15T23:21:48.891Z,kreilly@westpac.com.au,Accepted: Information Update - There are multiple changes: Summit Inspirational Leadership Workshop,user1_gasl,100
+Anna.Magill@btfinancialgroup.com,RECEIVE,2014-05-18T23:09:46.794Z,kreilly@westpac.com.au,RE: Executive Capabilities,user1_gasl,100
+Anna.Magill@btfinancialgroup.com,TRANSFER,2014-05-18T23:09:46.825Z,kreilly@westpac.com.au,RE: Executive Capabilities,user1_gasl,100
+Anna.Magill@btfinancialgroup.com,SEND,2014-05-18T23:09:47.667Z,kreilly@westpac.com.au,RE: Executive Capabilities,user1_gasl,100

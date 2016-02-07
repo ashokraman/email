@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This software is in the public domain under CC0 1.0 Universal.
+
+To the extent possible under law, the author(s) have dedicated all
+copyright and related and neighboring rights to this software to the
+public domain worldwide. This software is distributed without any
+warranty.
+
+You should have received a copy of the CC0 Public Domain Dedication
+along with this software (see the LICENSE.md file). If not, see
+<http://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-1.5.xsd"
+        include-child-content="true" require-authentication="false" menu-image="glyphicon glyphicon-flash" menu-image-type="icon">
+
+    <transition name="EmailScienceEntity" method="get" read-only="true">
+        <path-parameter name="emailScienceId"/>
+        <actions>
+            <entity-find-one entity-name="emailScience.EmailScience" value-field="emailScience"/>
+            <script>ec.web.sendJsonResponse(emailScience)</script>
+        </actions>
+        <default-response type="none"/>
+    </transition>
+    <!-- To test this try something like:
+
+    curl -X POST -H "Content-Type: application/json" \
+         -d '{ "emailScienceName":"REST Test 1", "emailScienceTypeEnumId":"EXT_MADE_UP", "statusId":"EXST_IN_DESIGN",
+             "authUsername":"john.doe", "authPassword":"moqui" }' \
+         http://localhost:8080/apps/emailScience/EmailScienceEntity
+    -->
+    <transition name="EmailScienceEntity" method="post">
+        <service-call name="org.moqui.emailScience.EmailScienceServices.createEmailScience" in-map="ec.web.parameters"
+                      web-send-json-response="true"/>
+        <default-response type="none"/>
+    </transition>
+    <transition name="EmailScienceEntity" method="put">
+        <path-parameter name="emailScienceId"/>
+        <service-call name="org.moqui.emailScience.EmailScienceServices.updateEmailScience" in-map="ec.web.parameters"
+                      web-send-json-response="true"/>
+        <default-response type="none"/>
+    </transition>
+
+    <transition name="EmailScienceEntity" method="delete">
+        <path-parameter name="emailScienceId"/>
+        <service-call name="delete#emailScience.EmailScience" in-map="ec.web.parameters"
+                      web-send-json-response="true"/>
+        <default-response type="none"/>
+    </transition>
+
+    <transition name="LoadAllData">
+        <!-- NOTE: this is in the emailScience component because it should NEVER be deployed on a production server! -->
+        <actions>
+            <script><![CDATA[
+            import org.moqui.entity.EntityDataLoader
+            import org.moqui.context.ExecutionContext
+            ExecutionContext ec = context.ec
+
+            ec.artifactExecution.disableAuthz()
+            ec.getArtifactExecution().push("loadData", "AT_OTHER", "AUTHZA_ALL", false)
+            ec.getArtifactExecution().setAnonymousAuthorizedAll()
+            boolean loggedInAnonymous = ec.getUser().loginAnonymousIfNoUser()
+
+            // TODO: reject requests until this is done?
+            // at least make sure there are no Enumeration records
+            if (ec.getEntity().find("moqui.basic.Enumeration").useCache(false).count()) {
+                String errMsg = "Not loading data, found Enumeration records so database isn't empty"
+                ec.logger.info(errMsg)
+                ec.message.addMessage(errMsg)
+                return
+            }
+
+            // load all the data
+            EntityDataLoader edl = ec.getEntity().makeDataLoader()
+
+            startTime = System.currentTimeMillis()
+            records = edl.load()
+            totalSeconds = (System.currentTimeMillis() - startTime) / 1000
+
+            ec.artifactExecution.pop()
+            if (loggedInAnonymous) ec.getUser().logoutAnonymousOnly()
+            ec.artifactExecution.enableAuthz()
+
+            ec.cache.clearAllCaches()
+            ]]></script>
+            <log level="info" message="Loaded [${records}] records in ${totalSeconds} seconds."/>
+        </actions>
+        <default-response url="."/>
+    </transition>
+
+    <subscreens default-item="EmailScience">
+        <!-- these are actually links to content to add to the menu since content is not automatically added to the menu -->
+    </subscreens>
+
+    <widgets>
+        <subscreens-panel id="emailScience-app" type="popup" title="EmailScience App"/>
+        <!-- for a header and panel in an app can use something like this, though the basic approach above is cleaner:
+        <container-panel id="emailScience-app">
+            <panel-header>
+                <label text="Moqui EmailScience App" type="h2"/>
+            </panel-header>
+            <panel-center>
+                <subscreens-panel id="emailScience-app-subscreen" type="tab"/>
+            </panel-center>
+        </container-panel>
+        -->
+    </widgets>
+</screen>

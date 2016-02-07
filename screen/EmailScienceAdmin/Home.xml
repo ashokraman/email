@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This software is in the public domain under CC0 1.0 Universal plus a 
+Grant of Patent License.
+
+To the extent possible under law, the author(s) have dedicated all
+copyright and related and neighboring rights to this software to the
+public domain worldwide. This software is distributed without any
+warranty.
+
+You should have received a copy of the CC0 Public Domain Dedication
+along with this software (see the LICENSE.md file). If not, see
+<http://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-1.6.xsd"
+        default-menu-include="false">
+
+    <transition name="dashboard"><default-response url="../Dashboard"/></transition>
+    <transition name="home"><default-response url="."/></transition>
+    
+    <actions>
+        <entity-find entity-name="example.Example" list="exampleList">
+            <search-form-inputs default-order-by="^exampleName"/></entity-find>
+
+        <entity-find entity-name="ExampleStatusItem" list="exampleStatusItemList"/>
+    </actions>
+    <widgets>
+        <container-panel id="dashboard-panel" dynamic="true">
+            <panel-left>
+                <section name="DashboardLeft">
+					<widgets> 
+					</widgets>
+				</section>
+            </panel-left>
+            <panel-center>
+        <container id="button-bar"><link url="../Dashboard" text="New Feature" link-type="anchor-button"/></container>
+        <form-list name="ListExampleContent" list="exampleContentList">
+            <field name="download"><default-field>
+                <link url="downloadContent" text="Download" parameter-map="[exampleId:exampleId, contentLocation:contentLocation]"/>
+            </default-field></field>
+            <field name="exampleId"><default-field><hidden/></default-field></field>
+            <field name="contentLocation"><default-field title="Location"><display/></default-field></field>
+            <field name="purposeEnumId"><default-field title="Purpose">
+                <drop-down><entity-options><entity-find entity-name="moqui.basic.Enumeration">
+                    <econdition field-name="enumTypeId" value="ExampleContentPurpose"/>
+                    <order-by field-name="description"/>
+                </entity-find></entity-options></drop-down>
+            </default-field></field>
+            <field name="By"><default-field><text-line size="6"/></default-field></field>
+            <field name="submitButton"><default-field title="Update"><submit/></default-field></field>
+            <field name="deleteLink">
+                <default-field title=" ">
+                    <!-- the parameters for this will be auto-mapped: exampleId, contentLocation -->
+                    <link url="deleteExampleContent" text="Delete" confirmation="Really Delete?"/>
+                </default-field>
+            </field>
+        </form-list>
+            </panel-center>
+            <panel-right>
+            </panel-right>
+        </container-panel>
+    </widgets>
+</screen>

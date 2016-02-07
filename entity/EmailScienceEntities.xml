@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/entity-definition-1.5.xsd">
+
+    <entity entity-name="EmailData" package-name="EmailScience.emaildata" group-name="nosql"
+            cache="never" sequence-bank-size="100" authorize-skip="create">
+        <field name="emailDataId" type="id" is-pk="true"/>
+        <field name="sender" type="id"/>
+        <field name="recipient" type="id"/>
+        <field name="eventTypeEnumId" type="id"/>
+        <field name="subject" type="text-long"/>
+        <field name="body" type="text-long"/>
+        <field name="instanceId" type="id"/>
+        <field name="createdByUserId" type="id-long"/>
+        <field name="actualTime" type="date-time"/>
+ <!--
+		<relationship type="one" title="User" related-entity-name="moqui.security.UserAccount">
+            <key-map field-name="createdByUserId" related-field-name="userId"/>
+		</relationship>
+         <relationship type="one" title="EventType" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="eventTypeEnumId"/>
+        </relationship>
+-->
+        <seed-data>
+            <!-- Event Type -->
+<!--
+            <moqui.basic.EnumerationType description="Event Type" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Receive" enumId="RECEIVE" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Deliver" enumId="DELIVER" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="DSN" enumId="DSN" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Expand" enumId="EXPAND" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Fail" enumId="FAIL" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="DuplicateDeliver" enumId="DUPLICATEDELIVER" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Transfer" enumId="TRANSFER" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Send" enumId="SEND" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Haredirect" enumId="HAREDIRECT" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Resolve" enumId="RESOLVE" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Process" enumId="PROCESS" enumTypeId="EventType"/>
+-->		</seed-data>
+    </entity>
+    <extend-entity entity-name="EnumerationType" package-name="moqui.basic">
+        <seed-data>
+            <moqui.basic.EnumerationType description="Event Type" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Receive" enumId="RECEIVE" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Deliver" enumId="DELIVER" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="DSN" enumId="DSN" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Expand" enumId="EXPAND" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Fail" enumId="FAIL" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="DuplicateDeliver" enumId="DUPLICATEDELIVER" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Transfer" enumId="TRANSFER" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Send" enumId="SEND" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Haredirect" enumId="HAREDIRECT" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Resolve" enumId="RESOLVE" enumTypeId="EventType"/>
+            <moqui.basic.Enumeration description="Process" enumId="PROCESS" enumTypeId="EventType"/>
+        </seed-data>
+    </extend-entity>
+    <entity entity-name="Actors" package-name="EmailScience.emaildata">
+        <field name="id" type="id-long" is-pk="true"/>
+        <field name="org" type="text-short"/>
+        <field name="bc" type="number-float"/>
+        <field name="obc" type="number-float"/>
+        <field name="ci" type="number-float"/>
+        <field name="sentiment" type="number-float"/>
+        <field name="msgsSent" type="number-integer"/>
+        <field name="msgsReceived" type="number-integer"/>
+        <field name="msgsTotal" type="number-integer"/>
+    </entity>
+    <entity entity-name="Links" package-name="EmailScience.links">
+        <field name="source" type="id-long" is-pk="true"/>
+        <field name="target" type="id-long" is-pk="true"/>
+        <field name="sourcegroup" type="text-medium"/>
+        <field name="targetgroup" type="text-medium"/>
+        <field name="weight" type="number-float"/>
+        <relationship type="one" title="sourceActor" related-entity-name="Actors">
+            <key-map field-name="source" related-field-name="id"/></relationship>
+        <relationship type="one" title="targetActor" related-entity-name="Actors">
+            <key-map field-name="target" related-field-name="id"/></relationship>
+    </entity>
+</entities>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-1.5.xsd"
+        default-menu-title="Maps" default-menu-index="4">
+    
+    <pre-actions>
+		<script>html_scripts.clear()</script>
+		<script>html_scripts.add("/assets/lib/sigma/sigma.min.js")</script>
+		<script>html_scripts.add('/assets/lib/jquery/jquery-2.1.1.min.js')</script>
+		<script>html_scripts.add('/assets/lib/bootstrap/js/bootstrap.min.js')</script>
+		<script>html_scripts.add("/assets/lib/sigma/plugins/sigma.parsers.json.js")</script>
+		<script>footer_scripts.clear()</script>
+		<script>html_stylesheets.clear()</script>
+		
+    </pre-actions>
+    <actions>
+	</actions>
+    <widgets>
+		<container id="dashboard-panel" dynamic="true">
+            <render-mode>
+                <text type="html"><![CDATA[
+<div id="graph-container" style="width: 1350px; height: 450px">
+</div>
+<script>
+sigma.parsers.json('getGraphNodeEdges', {
+    container: 'graph-container',
+    settings: {
+      defaultNodeColor: '#ec5148'
+    }
+});
+</script>
+                ]]></text>
+            </render-mode>
+        </container>
+    </widgets>
+</screen>

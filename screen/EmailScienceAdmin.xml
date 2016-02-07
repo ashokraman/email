@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This Work is in the public domain and is provided on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied,
+including, without limitation, any warranties or conditions of TITLE,
+NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
+You are solely responsible for determining the appropriateness of using
+this Work and assume any risks associated with your use of this Work.
+
+This Work includes contributions authored by David E. Jones, not as a
+"work for hire", who hereby disclaims any copyright to the same.
+-->
+<screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-1.5.xsd"
+        include-child-content="true" require-authentication="false">
+    <transition name="getGraphLink" read-only="true">
+        <actions>
+            <log level="warn" message="In getGraphLink transition"/>
+            <entity-find entity-name="EmailScienceActorLinkView" list="graphList" limit="100">
+            </entity-find>
+        <set field="lhs" from="new LinkedHashSet()"/>
+		<set field="aJsonList" from="[]"/>
+		<set field="lJsonList" from="[]"/>
+		<iterate list="graphList" entry="gl">
+		<script>
+		aJsonList.add([id:gl.id, group:gl.msgsReceived])
+		lJsonList.add([id:gl.id,source:gl.source,target:gl.target,value:gl.weight])
+		</script>
+		</iterate>
+		<set field="jList" from="{}"/>
+		<script>
+		jList = ["nodes":aJsonList,"edges":lJsonList]; 
+		</script>
+		<script>ec.web.sendJsonResponse(jList)</script>
+        </actions>
+        <default-response type="none"/>
+    </transition>
+    <transition name="getGraphNodeEdges" read-only="true">
+        <actions>
+			<set field="nodeMap" from="[]"/>
+			<set field="edgeMap" from="[]"/>
+            <entity-find entity-name="Links" list="linkList" limit="900"/>
+			<set field="idMap" from="new HashMap()"/>
+			<set field="aJL" from="[]"/>
+			<set field="aidS" from="0"/>
+			<set field="aidT" from="0"/>
+			<iterate list="linkList" entry="link">
+            <entity-find-one entity-name="Actors" value-field="actorS">
+				<field-map field-name="id" from="link.source"/>
+			</entity-find-one>
+			<script>
+				aidS = idMap.get(actorS.id)
+				if (!aidS) {
+					aidS = idMap.size()
+					idMap.put(actorS.id,aidS)
+					nodeMap.add([id:aidS, "label":actorS.id, received:actorS.msgsReceived, sent:actorS.msgsSent,
+					"x":Math.floor((Math.random()*500) + 1), "y":Math.floor((Math.random()*250) + 1), "size":Math.random(),
+					    "color": '#' + (
+      Math.floor(Math.random() * 16777215).toString())])
+				}
+			</script>
+            <entity-find-one entity-name="Actors" value-field="actorT">
+				<field-map field-name="id" from="link.target"/>
+			</entity-find-one>
+			<script>
+				aidT = idMap.get(actorT.id)
+				if (!aidT) {
+					aidT = idMap.size()
+					idMap.put(actorT.id,aidT)
+					nodeMap.add([id:aidT, "label":actorT.id, received:actorT.msgsReceived, sent:actorT.msgsSent,
+					"x":Math.floor((Math.random()*500) + 1), "y":Math.floor((Math.random()*250) + 1), "size":Math.random(), 
+					    "color": '#' + (
+      Math.floor(Math.random() * 16777215).toString())])
+				}
+				edgeMap.add([id:edgeMap.size(),source:aidS,target:aidT,value:link.weight])
+			</script>
+			</iterate>
+			<set field="jList" from="{}"/>
+			<script>
+			jList = ["edges":edgeMap,"nodes":nodeMap]; 
+			</script>
+			<script>ec.web.sendJsonResponse(jList)</script>
+        </actions>
+        <default-response type="none"/>
+    </transition>
+    <transition name="getJsonActorsLinks" read-only="true">
+        <actions>
+        <log level="warn" message="In getJsonActorsLinks transition"/>		<entity-find entity-name="Actors" list="actorsList" limit="100"/>
+		<entity-find entity-name="Links" list="linksList" limit="100"/>
+		<entity-find entity-name="EmailScienceActorLinkView" list="graphList" limit="10"/>
+		<set field="actorsJsonList" from="[]"/>
+		<iterate list="actorsList" entry="actor">
+		<script>
+		actorsJsonList.add([id:actor.id, group:actor.msgsReceived])
+		</script>
+		</iterate>
+		<set field="linksJsonList" from="[]"/>
+		<iterate list="linksList" entry="link">
+		<script>
+		linksJsonList.add([id:link.source,source:link.source,target:link.target,value:link.weight])
+		</script>
+		</iterate>
+		<set field="jsonList" from="{}"/>
+		<script>
+		jsonList = ["nodes":actorsJsonList,"edges":linksJsonList]; 
+		</script>
+		<script>ec.web.sendJsonResponse(jsonList)</script>
+        </actions>
+        <default-response type="none"/>
+    </transition>
+
+    <subscreens default-item="Home">
+        <!-- these are actually links to content to add to the menu since content is not automatically added to the menu -->
+    </subscreens>
+
+    <widgets>
+        <section name="EmailAdminMenu" condition="emainAdminId"><widgets>
+            <subscreens-menu id="email-admin-menu" type="tab"/>
+        </widgets></section>
+        <subscreens-active/>
+        <!-- don't do it this way, we want the menu to be shown conditionally: <subscreens-panel id="example-panel" type="tab" dynamic="false"/> -->
+    </widgets>
+	
+</screen>
